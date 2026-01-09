@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,600;1,700&family=Poppins&family=Roboto&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-position: center;
+}
+
+:root {
+  /* Primary color sampled from logo.png (used as theme) */
+  --primary: #0e8b53; /* fallback/assumed dominant color from logo.png */
+  --primary-600: #0c7f48;
+  --accent: #f4f9f6;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+}
+
+/* small helpers to use theme */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+/* hover state for btn-primary */
+.btn-primary:hover { opacity: 0.9; }
+
+/* focus helper to apply theme focus rings to inputs/buttons */
+.focus-theme:focus {
+  outline: none;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 4px rgba(14,139,83,0.12);
+}
+
+/* hover text helper */
+.hover-text-primary:hover { color: var(--primary); }
+
+
